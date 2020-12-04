@@ -1,0 +1,31 @@
+entity bitwise_xor is
+port( A,B: in bit_vector(0 to 15);
+		O:out bit_vector(0 to 15);
+		z: out bit
+		);
+		
+end bitwise_xor;
+
+architecture behavorial of bitwise_xor is
+
+component zerocheck_1 is
+	port (
+	S : in bit_vector(15 downto 0); z: out bit
+	);
+end component;
+
+signal R: bit_vector(15 downto 0);  --to hold O
+begin
+
+GEN_XOR: for I in 0 to 15 generate
+R(I) <= A(I) XOR B(I);
+end generate GEN_XOR;
+
+O <= R;
+
+z1: zerocheck_1
+	port map(
+				S => R,
+				z => z
+				);
+end behavorial;

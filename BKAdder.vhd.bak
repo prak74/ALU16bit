@@ -1,0 +1,219 @@
+-- Implements Brent-Kung Adder-Subtractor
+
+entity BKAdder is
+	port (A, B : in bit_vector(15 downto 0); c0: in bit; R: out bit_vector(15 downto 0); cout, z: out bit);
+end entity BKAdder;
+-- A and B are the numbers to be operated on. In case of subtraction, we assume the operation is A-B
+-- c0 is the carry-in (0 for addition, 1 for subtraction)
+-- R is the result of the operation on A and B
+-- z is an indicator. It is 1 only when R is 0
+
+architecture Struct of BKAdder is
+	signal pi, gi, S, B2: bit_vector(15 downto 0);
+	signal c_i: bit_vector(16 downto 1);
+	-- pi and gi are propagate and generate calculated for each bit in pre-processing stage
+	-- S is a Signal to hold the result for use in calculating z and to assign R
+	-- c_i holds the carries for each bit (including cout which is c_i(16))
+	-- B2 is the new B to be used for subtraction (if c0 = 1) or else it is equal to B.
+	-- Each bit of B2 is formed by xor-ing each bit of B with c0
+	
+	signal P_0i, G_0i: bit_vector(15 downto 0);
+	--To hold group generate and propagates from 0 to the ith bit
+	
+	signal P_23, P_45, P_67, P_89, P_1011, P_1213, P_1415, P_47, P_811, P_1215, P_815: bit;
+	signal G_23, G_45, G_67, G_89, G_1011, G_1213, G_1415, G_47, G_811, G_1215, G_815: bit;
+	-- P_ij and G_ij are intermediate group propagates and generates from the ith bit to jth one
+	
+	component genB2
+	port( B: in bit_vector(15 downto 0); c0: in bit;
+	B2: out bit_vector(15 downto 0)
+	);
+	end component; --generates B2
+
+	
+	component GenProp
+	port( Gin1, Pin1, Gin2, Pin2: in bit;
+		Gout, Pout: out bit);
+	end component;
+	--GenProp operates on two groups, say GP_ij (Gin1,Pin1) and GP_(j+1)k (Gin2,Pin2), to give GP_ik (Gout,Pout)
+	
+	component xor2    --16 bit xor, implemented bitwise
+	port(p,q: in bit_vector(15 downto 0);
+	r: out bit_vector(15 downto 0));
+	end component;
+	
+	component and_2    --16 bit and, implemented bitwise
+	port(p,q: in bit_vector(15 downto 0);
+	r: out bit_vector(15 downto 0));
+	end component;
+	
+	component carrygen --To generate carry in post processing
+	port(g,p: in bit_vector(15 downto 0);
+	c0: in bit;
+	c: out bit_vector(16 downto 1));
+	end component;
+	
+	component finalsum --To generate sum in post processing
+	port(p: in bit_vector(15 downto 0);
+	c: in bit_vector(16 downto 1);
+	c0: in bit;
+	s: out bit_vector(15 downto 0));
+	end component;
+	
+	component zerocheck --To generate z
+	port(S: in bit_vector(15 downto 0);
+	c: in bit;
+	z: out bit);
+	end component;
+	
+begin
+	b1: genB2
+	port map(
+	B => B, c0 => c0, B2 => B2
+	);
+	--Preprocessing
+	x1: xor2
+	port map(
+	p => A, q => B2, r => pi
+	);         --pi = A xor B2
+
+	x2: and_2
+	port map(
+	p => A, q => B2, r => gi
+	);         --gi = A and B2
+	
+	--Generate and Propagate
+	-- Brent Kung Adder has 6 levels in the group Generate and Propagate stage
+
+	--First Level
+	u1: GenProp
+	port map (
+	Gin1  => gi(0), Pin1 =>pi(0) , Gin2 => gi(1), Pin2 => pi(1), Gout => G_0i(1), Pout => P_0i(1)
+	);
+	u2: GenProp
+	port map (
+	Gin1  => gi(2), Pin1 =>pi(2) , Gin2 => gi(3), Pin2 => pi(3), Gout => G_23, Pout => P_23
+	);
+	u3: GenProp
+	port map (
+	Gin1  => gi(4), Pin1 =>pi(4) , Gin2 => gi(5), Pin2 => pi(5), Gout => G_45, Pout => P_45
+	);
+	u4: GenProp
+	port map (
+	Gin1  => gi(6), Pin1 =>pi(6) , Gin2 => gi(7), Pin2 => pi(7), Gout => G_67, Pout => P_67
+	);
+	u5: GenProp
+	port map (
+	Gin1  => gi(8), Pin1 =>pi(8) , Gin2 => gi(9), Pin2 => pi(9), Gout => G_89, Pout => P_89
+	);
+	u6: GenProp
+	port map (
+	Gin1  => gi(10), Pin1 =>pi(10) , Gin2 => gi(11), Pin2 => pi(11), Gout => G_1011, Pout => P_1011
+	);
+	u7: GenProp
+	port map (
+	Gin1  => gi(12), Pin1 =>pi(12) , Gin2 => gi(13), Pin2 => pi(13), Gout => G_1213, Pout => P_1213
+	);
+	u8: GenProp
+	port map (
+	Gin1  => gi(14), Pin1 =>pi(14) , Gin2 => gi(15), Pin2 => pi(15), Gout => G_1415, Pout => P_1415
+	);
+	--Second Level
+	u9: GenProp
+	port map (
+	Gin1  => G_0i(1), Pin1 =>P_0i(1) , Gin2 => G_23, Pin2 => P_23, Gout => G_0i(3), Pout => P_0i(3)
+	);
+	u10: GenProp
+	port map (
+	Gin1  => G_45, Pin1 =>P_45 , Gin2 => G_67, Pin2 => P_67, Gout => G_47, Pout => P_47
+	);
+	u11: GenProp
+	port map (
+	Gin1  => G_89, Pin1 =>P_89 , Gin2 => G_1011, Pin2 => P_1011, Gout => G_811, Pout => P_811
+	);
+	u12: GenProp
+	port map (
+	Gin1  => G_1213, Pin1 =>P_1213 , Gin2 => G_1415, Pin2 => P_1415, Gout => G_1215, Pout => P_1215
+	);
+	--Third Level
+	u13: GenProp
+	port map (
+	Gin1  => G_0i(3), Pin1 =>P_0i(3) , Gin2 => G_47, Pin2 => P_47, Gout => G_0i(7), Pout => P_0i(7)
+	);
+	u14: GenProp
+	port map (
+	Gin1  => G_811, Pin1 =>P_811 , Gin2 => G_1215, Pin2 => P_1215, Gout => G_815, Pout => P_815
+	);
+	--Fourth Level
+	u15: GenProp
+	port map (
+	Gin1  => G_0i(7), Pin1 =>P_0i(7) , Gin2 => G_811, Pin2 => P_811, Gout => G_0i(11), Pout => P_0i(11)
+	);
+	u16: GenProp
+	port map (
+	Gin1  => G_0i(7), Pin1 =>P_0i(7) , Gin2 => G_815, Pin2 => P_815, Gout => G_0i(15), Pout => P_0i(15)
+	);
+	--Fifth Level
+	u17: GenProp
+	port map (
+	Gin1  => G_0i(3), Pin1 =>P_0i(3) , Gin2 => G_45, Pin2 => P_45, Gout => G_0i(5), Pout => P_0i(5)
+	);
+	u18: GenProp
+	port map (
+	Gin1  => G_0i(7), Pin1 =>P_0i(7) , Gin2 => G_89, Pin2 => P_89, Gout => G_0i(9), Pout => P_0i(9)
+	);
+	u19: GenProp
+	port map (
+	Gin1  => G_0i(11), Pin1 =>P_0i(11) , Gin2 => G_1213, Pin2 => P_1213, Gout => G_0i(13), Pout => P_0i(13)
+	);
+	--Sixth Level
+	u20: GenProp
+	port map (
+	Gin1  => G_0i(1), Pin1 =>P_0i(1) , Gin2 => gi(2), Pin2 => pi(2), Gout => G_0i(2), Pout => P_0i(2)
+	);
+	u21: GenProp
+	port map (
+	Gin1  => G_0i(3), Pin1 =>P_0i(3) , Gin2 => gi(4), Pin2 => pi(4), Gout => G_0i(4), Pout => P_0i(4)
+	);
+	u22: GenProp
+	port map (
+	Gin1  => G_0i(5), Pin1 =>P_0i(5) , Gin2 => gi(6), Pin2 => pi(6), Gout => G_0i(6), Pout => P_0i(6)
+	);
+	u23: GenProp
+	port map (
+	Gin1  => G_0i(7), Pin1 =>P_0i(7) , Gin2 => gi(8), Pin2 => pi(8), Gout => G_0i(8), Pout => P_0i(8)
+	);
+	u24: GenProp
+	port map (
+	Gin1  => G_0i(9), Pin1 =>P_0i(9) , Gin2 => gi(10), Pin2 => pi(10), Gout => G_0i(10), Pout => P_0i(10)
+	);
+	u25: GenProp
+	port map (
+	Gin1  => G_0i(11), Pin1 =>P_0i(11) , Gin2 => gi(12), Pin2 => pi(12), Gout => G_0i(12), Pout => P_0i(12)
+	);
+	u26: GenProp
+	port map (
+	Gin1  => G_0i(13), Pin1 =>P_0i(13) , Gin2 => gi(14), Pin2 => pi(14), Gout => G_0i(14), Pout => P_0i(14)
+	);
+	--Postprocessing
+	
+	G_0i(0) <= gi(0);
+	P_0i(0) <= pi(0);
+	
+	c1: carrygen
+	port map (
+	g => G_0i, p => P_0i, c0 => c0, c => c_i
+	); --generates carry for each bit
+
+	s1: finalsum
+	port map (
+	p => pi, c => c_i, c0 => c0, s => S
+	); --calculates the sum bits
+	R <= S;
+	cout <= c_i(16);
+	
+	z1: zerocheck
+	port map(
+	S => S, c => c_i(16), z => z
+	); --checks if the sum is really 0
+end Struct;

@@ -1,0 +1,3 @@
+entity ALU_16 is
+	port (A,B: in bit_vector(15 downto 0); S1, S0: in bit; R: out bit_vector(15 downto 0); c,z: out bit);
+end ALU_16;

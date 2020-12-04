@@ -1,0 +1,683 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/19176/Desktop/ALU16bit/ALU16bit/simulation/modelsim
+Ealu_16
+Z1 w1607080611
+!i122 0
+R0
+Z2 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/ALU_16.vhd
+Z3 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/ALU_16.vhd
+l0
+L1 1
+VR=465lhYUhGUXojgzEnzK1
+!s100 Ph4BDDfdO@4S_:[6Omii?0
+Z4 OV;C;2020.1;71
+31
+Z5 !s110 1607094734
+!i10b 1
+Z6 !s108 1607094734.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/ALU_16.vhd|
+Z8 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/ALU_16.vhd|
+!i113 1
+Z9 o-93 -work work
+Z10 tExplicit 1 CvgOpt 0
+Aarch
+DEx4 work 6 alu_16 0 22 R=465lhYUhGUXojgzEnzK1
+!i122 0
+l50
+L5 80
+V364m6?jW`z[W`hTb8BLcl3
+!s100 5]cakCkdC8]9He_Oi?n_f2
+R4
+31
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Eand_2
+R1
+!i122 4
+R0
+Z11 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/and_2.vhd
+Z12 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/and_2.vhd
+l0
+L2 1
+V?c;l126z9[o8`hYzEkVYj3
+!s100 L0K^309UXz8LKdl>lSg@:1
+R4
+31
+Z13 !s110 1607094735
+!i10b 1
+Z14 !s108 1607094735.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/and_2.vhd|
+Z16 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/and_2.vhd|
+!i113 1
+R9
+R10
+Astructand
+DEx4 work 5 and_2 0 22 ?c;l126z9[o8`hYzEkVYj3
+!i122 4
+l8
+L7 9
+V=`eCF^Vk23^RZARdEE>z=1
+!s100 kJG?YnM<5kEWf>;6K:WCc3
+R4
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R9
+R10
+Ebitwise_nand
+R1
+!i122 9
+R0
+Z17 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_nand.vhd
+Z18 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_nand.vhd
+l0
+L1 1
+VU4^bhoNj`iPSj]KTLc_O60
+!s100 PW`CPWW>6j9Hh8H6Pgl`a1
+R4
+31
+Z19 !s110 1607094736
+!i10b 1
+Z20 !s108 1607094736.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_nand.vhd|
+Z22 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_nand.vhd|
+!i113 1
+R9
+R10
+Astruct
+DEx4 work 12 bitwise_nand 0 22 U4^bhoNj`iPSj]KTLc_O60
+!i122 9
+l26
+L9 107
+V`<1V]P`Ni4VFPXS_Dz6dc3
+!s100 TLX2aiFTDG:hV@:o_mAOY1
+R4
+31
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R9
+R10
+Ebitwise_xor
+R1
+!i122 12
+R0
+Z23 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_xor.vhd
+Z24 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_xor.vhd
+l0
+L1 1
+VBEom5RS40?]o`mklTPHbT1
+!s100 [YnI`aNS0oN_9RgXHYLzl2
+R4
+31
+Z25 !s110 1607094737
+!i10b 1
+Z26 !s108 1607094737.000000
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_xor.vhd|
+Z28 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_xor.vhd|
+!i113 1
+R9
+R10
+Abehavioral
+DEx4 work 11 bitwise_xor 0 22 BEom5RS40?]o`mklTPHbT1
+!i122 12
+l17
+L7 23
+VCdX@ReaO1HX3h`7HH3BCO3
+!s100 KeDLDN5W^?2LYTH?2`@oU2
+R4
+31
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R9
+R10
+Ebkadder
+R1
+!i122 1
+R0
+Z29 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/bkadder.vhd
+Z30 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/bkadder.vhd
+l0
+L3 1
+VGCL]knTk3Thgh_EoefUji1
+!s100 6b6nz@WMlk1FBYDSCRPKi0
+R4
+31
+R13
+!i10b 1
+R6
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/bkadder.vhd|
+Z32 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/bkadder.vhd|
+!i113 1
+R9
+R10
+Astruct
+DEx4 work 7 bkadder 0 22 GCL]knTk3Thgh_EoefUji1
+!i122 1
+l71
+L11 212
+VEaG[6==E8d:[G=P9ikj`51
+!s100 QC2^^kAZYGN^UY[>?;8Y^3
+R4
+31
+R13
+!i10b 1
+R6
+R31
+R32
+!i113 1
+R9
+R10
+Ecarrygen
+Z33 w1607080612
+!i122 6
+R0
+Z34 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/carrygen.vhd
+Z35 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/carrygen.vhd
+l0
+L2 1
+V??2Qk^G^^0g;:HakMJ1h[2
+!s100 ]bWUMAoDfag95ZVcXSdEl3
+R4
+31
+R19
+!i10b 1
+R20
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/carrygen.vhd|
+Z37 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/carrygen.vhd|
+!i113 1
+R9
+R10
+Astructcarrygen
+DEx4 work 8 carrygen 0 22 ??2Qk^G^^0g;:HakMJ1h[2
+!i122 6
+l7
+L6 9
+VXCXB11:Ff?ZoR5zV96VV02
+!s100 gVG?6`M]bCbXZFJ=Y<jXH1
+R4
+31
+R19
+!i10b 1
+R20
+R36
+R37
+!i113 1
+R9
+R10
+Ecout_calc
+R33
+!i122 15
+R0
+Z38 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/cout_calc.vhd
+Z39 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/cout_calc.vhd
+l0
+L1 1
+VLVoCo09gQmoD8WHNmVJ?k3
+!s100 zA;i^<<B6fEZ2fVlg8El_2
+R4
+31
+Z40 !s110 1607094738
+!i10b 1
+Z41 !s108 1607094738.000000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/cout_calc.vhd|
+Z43 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/cout_calc.vhd|
+!i113 1
+R9
+R10
+Astruct
+DEx4 work 9 cout_calc 0 22 LVoCo09gQmoD8WHNmVJ?k3
+!i122 15
+l9
+L8 4
+V]aKOSgzJj@]4N^93i[17z1
+!s100 fn9SibibWFz0hai09bMHX2
+R4
+31
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R9
+R10
+Efinalsum
+R33
+!i122 7
+R0
+Z44 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/finalsum.vhd
+Z45 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/finalsum.vhd
+l0
+L2 1
+VPVO>b]j12oP>8=`k_lGi72
+!s100 YX3SKOgh9JjbUDmHFoEz`1
+R4
+31
+R19
+!i10b 1
+R20
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/finalsum.vhd|
+Z47 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/finalsum.vhd|
+!i113 1
+R9
+R10
+Astructfinalsum
+DEx4 work 8 finalsum 0 22 PVO>b]j12oP>8=`k_lGi72
+!i122 7
+l8
+L7 10
+Vg4aUV@Q22kiGPT_f`C5fK3
+!s100 ReMFZ39E2m]f@Y0CGX6N<2
+R4
+31
+R19
+!i10b 1
+R20
+R46
+R47
+!i113 1
+R9
+R10
+Egenb2
+R33
+!i122 2
+R0
+Z48 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/genb2.vhd
+Z49 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/genb2.vhd
+l0
+L1 1
+V<6V;Mjdf:o3DhXJQY9fDF2
+!s100 ^Zn8CR1==;YY5ahZVgczj0
+R4
+31
+R13
+!i10b 1
+R14
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/genb2.vhd|
+Z51 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/genb2.vhd|
+!i113 1
+R9
+R10
+Astructb2
+DEx4 work 5 genb2 0 22 <6V;Mjdf:o3DhXJQY9fDF2
+!i122 2
+l6
+L5 9
+VQ6X;;jj58VfKf4N[?_[Y33
+!s100 Nb8Q6:leLlh?bCRQKZ`KL2
+R4
+31
+R13
+!i10b 1
+R14
+R50
+R51
+!i113 1
+R9
+R10
+Egenprop
+R33
+!i122 5
+R0
+Z52 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/genprop.vhd
+Z53 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/genprop.vhd
+l0
+L2 1
+Vdjh8`l3;EG0J;KJFBkz9E1
+!s100 VS<dlZ3W9:2Lh]6n8boVb0
+R4
+31
+R13
+!i10b 1
+R14
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/genprop.vhd|
+Z55 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/genprop.vhd|
+!i113 1
+R9
+R10
+Astruct1
+DEx4 work 7 genprop 0 22 djh8`l3;EG0J;KJFBkz9E1
+!i122 5
+l10
+L9 5
+VJabDcZ3aeL_fg`kKJbT6F2
+!s100 mA[@4O?eC?b?6m3>EfX_A2
+R4
+31
+R13
+!i10b 1
+R14
+R54
+R55
+!i113 1
+R9
+R10
+Emux_42
+R33
+Z56 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z57 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z58 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+R0
+Z59 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_42.vhd
+Z60 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_42.vhd
+l0
+L5 1
+V2@ZDTO5X0>JDg;mWO@G1X1
+!s100 Kih>c>?<63KakijAd=dL=2
+R4
+31
+R25
+!i10b 1
+R26
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_42.vhd|
+Z62 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_42.vhd|
+!i113 1
+R9
+R10
+Astruct
+R56
+R57
+R58
+DEx4 work 6 mux_42 0 22 2@ZDTO5X0>JDg;mWO@G1X1
+!i122 13
+l49
+L26 40
+VT]`IHb61;2BHX;c7lM7bM2
+!s100 2Pz[1<24`BEd2B^50g]3O0
+R4
+31
+R25
+!i10b 1
+R26
+R61
+R62
+!i113 1
+R9
+R10
+Emux_out
+R33
+!i122 14
+R0
+Z63 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_out.vhd
+Z64 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_out.vhd
+l0
+L1 1
+VH[5OFM9L9[aSb4JAKVZGZ1
+!s100 ^iH=o627@THA;O:`BT36M0
+R4
+31
+R40
+!i10b 1
+R26
+Z65 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_out.vhd|
+Z66 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_out.vhd|
+!i113 1
+R9
+R10
+Astruct
+DEx4 work 7 mux_out 0 22 H[5OFM9L9[aSb4JAKVZGZ1
+!i122 14
+l9
+L8 6
+V_a4QGYEIa`UV?OHoX]3DC2
+!s100 a_fFe`SaUoNDgVU07R8BH3
+R4
+31
+R40
+!i10b 1
+R26
+R65
+R66
+!i113 1
+R9
+R10
+Enand_2
+R33
+!i122 10
+R0
+Z67 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/nand_2.vhd
+Z68 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/nand_2.vhd
+l0
+L1 1
+V_RZKMdFP8h1B^5b`JWRh32
+!s100 WaV0M;BE=E59bXh>ZEULI1
+R4
+31
+R19
+!i10b 1
+R20
+Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/nand_2.vhd|
+Z70 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/nand_2.vhd|
+!i113 1
+R9
+R10
+Astruct
+DEx4 work 6 nand_2 0 22 _RZKMdFP8h1B^5b`JWRh32
+!i122 10
+l9
+L8 4
+V7?IHech@M`[8CfjR>l0:m2
+!s100 E1I6T;1d5ZA`Q;LOJmmm92
+R4
+31
+R19
+!i10b 1
+R20
+R69
+R70
+!i113 1
+R9
+R10
+Etestbench
+Z71 w1607093337
+!i122 17
+R0
+Z72 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd
+Z73 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd
+l0
+L1 1
+VoImoVokT=EL:YmoRl<zdR2
+!s100 9E^^RMNoOGTG1GT[WPz2z1
+R4
+31
+R40
+!i10b 1
+R41
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd|
+!s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd|
+!i113 1
+R9
+R10
+Atb
+DEx4 work 9 testbench 0 22 oImoVokT=EL:YmoRl<zdR2
+!i122 17
+l19
+L3 444
+V6R_l;FBTOn3_1TggYMe=93
+!s100 BkF<nAQ^jm6U9z50a1Nk52
+R4
+31
+!s110 1607094739
+!i10b 1
+R41
+R74
+Z75 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd|
+!i113 1
+R9
+R10
+Exor2
+R33
+!i122 3
+R0
+Z76 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/xor2.vhd
+Z77 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/xor2.vhd
+l0
+L2 1
+V:Yn]I^zokX3TB=WeF;2EK1
+!s100 WB@TobVcAD02RDNoPdH;g0
+R4
+31
+R13
+!i10b 1
+R14
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/xor2.vhd|
+Z79 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/xor2.vhd|
+!i113 1
+R9
+R10
+Astructxor
+DEx4 work 4 xor2 0 22 :Yn]I^zokX3TB=WeF;2EK1
+!i122 3
+l8
+L7 9
+VZ[1@VL5A@CQ1EBhZAc4@61
+!s100 VT@U[VVm?XL=Lzl6IbZCa0
+R4
+31
+R13
+!i10b 1
+R14
+R78
+R79
+!i113 1
+R9
+R10
+Ezerocheck
+R33
+!i122 8
+R0
+Z80 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck.vhd
+Z81 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck.vhd
+l0
+L2 1
+VmFdUlEfaMaR;c^PWRF=>j1
+!s100 4gb?T7i]WVm92VGSAA>Fo3
+R4
+31
+R19
+!i10b 1
+R20
+Z82 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck.vhd|
+Z83 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck.vhd|
+!i113 1
+R9
+R10
+Astructzerocheck
+DEx4 work 9 zerocheck 0 22 mFdUlEfaMaR;c^PWRF=>j1
+!i122 8
+l8
+L7 4
+VIHE[j;CDeQ>hD6gfGlC2I0
+!s100 PSa2;ZWXfZ@N2m9S`nSKS2
+R4
+31
+R19
+!i10b 1
+R20
+R82
+R83
+!i113 1
+R9
+R10
+Ezerocheck_1
+R33
+!i122 11
+R0
+Z84 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck_1.vhd
+Z85 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck_1.vhd
+l0
+L2 1
+V^34Ydelc4Ro1?LcUOVNSI0
+!s100 SGQ84<BXe]0LfAa[X]TiL0
+R4
+31
+R25
+!i10b 1
+R26
+Z86 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck_1.vhd|
+Z87 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck_1.vhd|
+!i113 1
+R9
+R10
+Astructzerocheck_1
+DEx4 work 11 zerocheck_1 0 22 ^34Ydelc4Ro1?LcUOVNSI0
+!i122 11
+l8
+L7 4
+VAd7Nf=7]B0[6Z;_[ROci21
+!s100 cC:C<mbjDjiUXGmIBekW=2
+R4
+31
+R25
+!i10b 1
+R26
+R86
+R87
+!i113 1
+R9
+R10
+Ezout_calc
+R33
+!i122 16
+R0
+Z88 8C:/Users/19176/Desktop/ALU16bit/ALU16bit/zout_calc.vhd
+Z89 FC:/Users/19176/Desktop/ALU16bit/ALU16bit/zout_calc.vhd
+l0
+L1 1
+V72fRni6a1Q]RzEVU]eCJ43
+!s100 _kL3C5F]2hFVe?GIJCFzR3
+R4
+31
+R40
+!i10b 1
+R41
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/19176/Desktop/ALU16bit/ALU16bit/zout_calc.vhd|
+Z91 !s107 C:/Users/19176/Desktop/ALU16bit/ALU16bit/zout_calc.vhd|
+!i113 1
+R9
+R10
+Astruct
+DEx4 work 9 zout_calc 0 22 72fRni6a1Q]RzEVU]eCJ43
+!i122 16
+l9
+L8 4
+VCLf7g8=HEnNR^OH;[5@3m0
+!s100 [6AjciljKS^enB:D>^D7n1
+R4
+31
+R40
+!i10b 1
+R41
+R90
+R91
+!i113 1
+R9
+R10

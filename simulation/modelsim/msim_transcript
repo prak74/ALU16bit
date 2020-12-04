@@ -1,0 +1,278 @@
+# Reading pref.tcl
+# do ALU_16_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/ALU_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:14 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/ALU_16.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity ALU_16
+# -- Compiling architecture arch of ALU_16
+# End time: 20:42:14 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/bkadder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:14 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/bkadder.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity BKAdder
+# -- Compiling architecture Struct of BKAdder
+# End time: 20:42:15 on Dec 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/genb2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:15 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/genb2.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity genB2
+# -- Compiling architecture StructB2 of genB2
+# End time: 20:42:15 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/xor2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:15 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/xor2.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity xor2
+# -- Compiling architecture Structxor of xor2
+# End time: 20:42:15 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/and_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:15 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/and_2.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity and_2
+# -- Compiling architecture Structand of and_2
+# End time: 20:42:15 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/genprop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:15 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/genprop.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity GenProp
+# -- Compiling architecture Struct1 of GenProp
+# End time: 20:42:16 on Dec 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/carrygen.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:16 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/carrygen.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity carrygen
+# -- Compiling architecture Structcarrygen of carrygen
+# End time: 20:42:16 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/finalsum.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:16 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/finalsum.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity finalsum
+# -- Compiling architecture Structfinalsum of finalsum
+# End time: 20:42:16 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:16 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity zerocheck
+# -- Compiling architecture Structzerocheck of zerocheck
+# End time: 20:42:16 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_nand.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:16 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_nand.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity bitwise_nand
+# -- Compiling architecture Struct of bitwise_nand
+# End time: 20:42:16 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/nand_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:16 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/nand_2.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity nand_2
+# -- Compiling architecture Struct of nand_2
+# End time: 20:42:17 on Dec 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:17 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/zerocheck_1.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity zerocheck_1
+# -- Compiling architecture Structzerocheck_1 of zerocheck_1
+# End time: 20:42:17 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_xor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:17 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/bitwise_xor.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity bitwise_xor
+# -- Compiling architecture behavioral of bitwise_xor
+# End time: 20:42:17 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_42.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:17 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_42.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux_42
+# -- Compiling architecture Struct of mux_42
+# End time: 20:42:17 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_out.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:17 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/mux_out.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux_out
+# -- Compiling architecture struct of mux_out
+# End time: 20:42:18 on Dec 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/cout_calc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:18 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/cout_calc.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity cout_calc
+# -- Compiling architecture struct of cout_calc
+# End time: 20:42:18 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/zout_calc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:18 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/zout_calc.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity zout_calc
+# -- Compiling architecture struct of zout_calc
+# End time: 20:42:18 on Dec 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:18 on Dec 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity Testbench
+# -- Compiling architecture tb of Testbench
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(44): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(72): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(107): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(128): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(135): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(142): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(149): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(156): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(163): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(170): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(177): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(184): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(191): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(198): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(205): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(212): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(219): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(226): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(233): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(240): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(247): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(254): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(261): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(268): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(275): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(282): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(289): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(296): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(303): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(310): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(317): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(324): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(331): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(338): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(345): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(352): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(359): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(366): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(373): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(380): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(387): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(394): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(401): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(408): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(415): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(422): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(429): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(436): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/Users/19176/Desktop/ALU16bit/ALU16bit/Testbench.vhd(443): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 20:42:19 on Dec 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 60
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 20:42:19 on Dec 04,2020
+# Loading std.standard
+# Loading work.testbench(tb)
+# Loading work.alu_16(arch)
+# Loading work.bkadder(struct)
+# Loading work.genb2(structb2)
+# Loading work.xor2(structxor)
+# Loading work.and_2(structand)
+# Loading work.genprop(struct1)
+# Loading work.carrygen(structcarrygen)
+# Loading work.finalsum(structfinalsum)
+# Loading work.zerocheck(structzerocheck)
+# Loading work.bitwise_nand(struct)
+# Loading work.nand_2(struct)
+# Loading work.zerocheck_1(structzerocheck_1)
+# Loading work.bitwise_xor(behavioral)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mux_42(struct)
+# Loading work.mux_out(struct)
+# Loading work.cout_calc(struct)
+# Loading work.zout_calc(struct)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sanke  Hostname: LAPTOP-AHABRSSK  ProcessID: 12628
+#           Attempting to use alternate WLF file "./wlftmf5zrc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmf5zrc
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 20:46:42 on Dec 04,2020, Elapsed time: 0:04:23
+# Errors: 0, Warnings: 2
