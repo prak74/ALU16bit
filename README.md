@@ -7,6 +7,6 @@ The 4 different tasks are:-
 * Bitwise XOR
 # Contributors
 This project was made by a team of 4 (including myself). The other 3 contributors, colleagues of mine, were : 
-* Sanket J. Hanamashetti
+* Sanket J. Hanamashetti | Github: [sjshetti](https://github.com/sjshetti)
 * Arpit Sahu
 * Bhavesh Khichi
